@@ -46,7 +46,7 @@ class CSV {
         rows.push(schema.map(capitalize))
     
 
-        for(let i = 0; i < json.length; i++){
+        for(let i = 0; i < objects.length; i++){
             let currentRow = []
             for( const attr of schema ){ 
                 currentRow.push(objects[i][attr])

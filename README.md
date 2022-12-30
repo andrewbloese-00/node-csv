@@ -7,10 +7,10 @@ The utilities are exposed via the "CSV" class. Please refer to the directions be
 
 1. Install the library either by cloning this repo or with npm
 ```
- npm install csvjs
+ npm install blazecsv
 ```
 
-2. Create a new file script.js with the following contents
+2. Use the CSV methods to read data, append an entry or write to file.
 
 ```
 
