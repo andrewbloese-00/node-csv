@@ -15,7 +15,7 @@ The utilities are exposed via the "CSV" class. Please refer to the directions be
 ```
 
 // import library
-const {CSV} = require("csvjs")
+const {CSV} = require("blazecsv")
 
 // reading a file
 let csv = new CSV("<path-to-csv-file>")
