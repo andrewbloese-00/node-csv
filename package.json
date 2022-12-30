@@ -1,0 +1,20 @@
+{
+  "name": "jscsv",
+  "version": "1.0.0",
+  "description": "A lightweight csv reader for nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'See the github repo for more information'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewbloese-00/node-csv.git"
+  },
+  "keywords": ["CSV","NodeJS","Data","Utilities"],
+  "author": "Andrew Bloese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewbloese-00/node-csv/issues"
+  },
+  "homepage": "https://github.com/andrewbloese-00/node-csv#readme"
+}
