@@ -92,19 +92,19 @@ class CSV {
             for(let row = 1; row < rows.length; ++row){
                 // parse the csv to create json objects for each row
                 let appendee={}
+                let r = rows[row]
                 schemaKeys.forEach((key,idx)=>{
-                    isNaN(Number(rows[row][idx])) 
-                        ? appendee[key] = rows[row][idx]
-                        : appendee[key] = Number(rows[row][idx].trim())
-                    if(String(rows[row][idx]).includes(",")){
-                         appendee[key] = rows[row][idx].split(",")
+                    try{
+                        appendee[key] = JSON.parse(r[idx])
+                    } catch (e) { 
+                        appendee[key] = r[idx]
                     }
             
                 })
                 result.push(appendee)
             }
             this._content = {plain: rows, json: result}
-            return result;
+            return result
         } catch (err) {
             console.warn("Failed to read CSV at " + this._file)
             console.error(err)
