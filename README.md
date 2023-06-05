@@ -1,3 +1,5 @@
+> CURRENTLY WORKING ON SUPPORTING NESTED LIST FIELDS
+
 # node-csv
 A lightweight csv reader for nodejs.
 
